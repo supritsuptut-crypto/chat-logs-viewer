@@ -66,44 +66,76 @@ button{border:none;cursor:pointer;background:none}
 
 @media (max-width:767px){
   .layout{padding:0;gap:0}
-  .sidebar-mobile-open,.sidebar-mobile-closed{width:min(86vw,360px)}
-  .sidebar-card{border-radius:0 28px 28px 0}
-  .sidebar-header{padding:18px 16px}
-  .sidebar-title{font-size:1.15rem;line-height:1.2}
-  .sidebar-subtitle{font-size:.88rem}
-  .sidebar-body{padding:12px}
-  .search-card,.upload-card,.collapse-card,.conversation-card{border-radius:22px}
-  .primary-button{padding:12px 14px}
+  .sidebar-mobile-open,.sidebar-mobile-closed{width:min(84vw,340px)}
+  .sidebar-card{border-radius:0 24px 24px 0}
+  .sidebar-header{padding:16px 14px}
+  .sidebar-title{font-size:1.05rem;line-height:1.18}
+  .sidebar-subtitle{font-size:.82rem;margin-top:6px}
+  .icon-button{width:38px;height:38px;border-radius:14px}
+  .sidebar-body{padding:10px}
+  .search-card{padding:11px 13px;gap:8px;border-radius:18px}
+  .upload-card,.collapse-card{padding:12px;margin-top:12px;border-radius:18px}
+  .upload-label,.collapse-title,.day-detail-title{font-size:.95rem}
+  .primary-button{margin-top:10px;padding:11px 12px;border-radius:15px;font-size:.98rem}
+  .avatar-panel{margin-top:12px;gap:12px}
+  .avatar-section-title{font-size:.88rem;margin-bottom:6px}
+  .avatar-row{gap:8px}
+  .conversation-list{margin-top:12px;gap:10px;max-height:52vh}
+  .conversation-card{padding:14px 14px 13px;border-radius:20px}
+  .conversation-title{font-size:1rem;line-height:1.35}
+  .conversation-time,.conversation-stats{margin-top:5px;font-size:.85rem}
   .main-card{border-radius:0;border-left:none;border-right:none;min-width:0}
-  .main-toolbar{padding:14px 12px;gap:12px}
-  .toolbar-left{width:100%;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:start;gap:10px}
-  .toolbar-title{font-size:1.35rem;line-height:1.25;white-space:normal;overflow:visible;text-overflow:unset;word-break:break-word}
-  .toolbar-subtitle{gap:8px;font-size:.88rem}
-  .toolbar-right{width:100%;justify-content:stretch;gap:10px}
-  .segmented-control{flex-shrink:0}
-  .segmented-control button{padding:9px 14px}
-  .search-inline{min-width:0;flex:1;padding:10px 14px}
-  .calendar-title{font-size:1.15rem;line-height:1.2}
-  .calendar-subtitle{font-size:.9rem;margin-top:6px}
-  .calendar-header{padding:16px 14px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:12px}
-  .calendar-nav{gap:10px}
-  .circle-pink-button{width:44px;height:44px}
-  .calendar-body,.chat-view,.calendar-view{padding:12px}
-  .calendar-shell{border-radius:26px}
-  .calendar-grid,.calendar-weekdays{gap:6px}
-  .calendar-weekdays{font-size:.78rem;margin-bottom:12px}
-  .calendar-day,.calendar-empty{height:84px;border-radius:18px;padding:8px 6px}
-  .calendar-day-number{font-size:1rem}
-  .calendar-window-pill{font-size:.54rem;padding:2px 5px}
-  .calendar-message-count{font-size:.58rem;line-height:1.2}
-  .calendar-token-count{font-size:.54rem;line-height:1.2;margin-top:2px}
-  .message-row{gap:8px}
-  .avatar-size{width:32px;height:32px}
-  .message-column{max-width:calc(100% - 40px)}
-  .message-bubble{padding:12px 13px;border-radius:18px;line-height:1.75;font-size:.97rem}
-  .reasoning-toggle,.reasoning-body{padding:10px 12px}
-  .message-meta{font-size:.76rem;gap:6px}
-  .day-detail-card,.selected-conversation-section{padding:14px;border-radius:22px}
-  .day-conversation-card{padding:14px;border-radius:18px}
-  .day-conversation-title,.selected-conversation-title{font-size:1rem}
+  .main-toolbar{padding:10px 10px 12px;gap:10px}
+  .toolbar-left{width:100%;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:start;gap:8px}
+  .toolbar-title{font-size:1.18rem;line-height:1.2;white-space:normal;overflow:visible;text-overflow:unset;word-break:break-word}
+  .toolbar-subtitle{gap:6px;font-size:.82rem;margin-top:6px}
+  .toolbar-right{width:100%;justify-content:stretch;gap:8px}
+  .segmented-control{flex-shrink:0;padding:4px;gap:4px}
+  .segmented-control button{padding:8px 12px}
+  .search-inline{min-width:0;flex:1;padding:8px 12px}
+  .calendar-title{font-size:1.05rem;line-height:1.15}
+  .calendar-subtitle{font-size:.82rem;margin-top:5px}
+  .calendar-header{padding:14px 12px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px}
+  .calendar-nav{gap:8px}
+  .circle-pink-button{width:40px;height:40px}
+  .calendar-body,.calendar-view{padding:10px}
+  .chat-view{padding:8px}
+  .calendar-shell{border-radius:22px}
+  .calendar-grid,.calendar-weekdays{gap:5px}
+  .calendar-weekdays{font-size:.72rem;margin-bottom:10px}
+  .calendar-day,.calendar-empty{height:94px;border-radius:18px;padding:7px 5px}
+  .calendar-cell-top{gap:4px;align-items:flex-start}
+  .calendar-day-number{font-size:1.65rem;line-height:.95;letter-spacing:-.02em}
+  .calendar-window-pill{font-size:.52rem;padding:1px 5px;line-height:1.25}
+  .calendar-message-count{font-size:.48rem;line-height:1.15;font-weight:800}
+  .calendar-token-count{font-size:.44rem;line-height:1.1;margin-top:1px;opacity:.82}
+  .message-day-list{gap:22px}
+  .day-label-wrap{margin-bottom:14px}
+  .message-list{gap:14px}
+  .message-row{gap:6px}
+  .avatar-size{width:28px;height:28px}
+  .message-column{max-width:calc(100% - 18px)}
+  .reasoning-card{border-radius:16px}
+  .message-bubble{padding:11px 12px;border-radius:16px;line-height:1.7;font-size:.95rem}
+  .reasoning-toggle,.reasoning-body{padding:9px 11px}
+  .message-meta{font-size:.72rem;gap:5px;margin-top:6px}
+  .day-detail-card,.selected-conversation-section{margin-top:16px;padding:12px;border-radius:18px}
+  .day-detail-header{margin-bottom:12px;gap:8px}
+  .day-detail-pill{padding:5px 10px;font-size:.82rem}
+  .day-conversation-list{gap:10px}
+  .day-conversation-card{padding:12px;border-radius:16px;gap:10px}
+  .day-conversation-title,.selected-conversation-title{font-size:.95rem;line-height:1.35}
+  .day-conversation-meta{margin-top:4px;font-size:.82rem}
+  .day-conversation-arrow{font-size:1.2rem}
 }
+
+@media (max-width:420px){
+  .calendar-day,.calendar-empty{height:90px;padding:6px 4px;border-radius:16px}
+  .calendar-day-number{font-size:1.52rem}
+  .calendar-window-pill{font-size:.5rem;padding:1px 4px}
+  .calendar-message-count{font-size:.46rem}
+  .calendar-token-count{font-size:.42rem}
+  .message-column{max-width:calc(100% - 12px)}
+  .chat-view{padding:6px}
+}
+
